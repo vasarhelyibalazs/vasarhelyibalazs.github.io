@@ -1,0 +1,208 @@
+body{
+	font-size: 30px;
+	font-family: 'Orelega One', cursive;
+	font-weight: 300;
+}
+
+*, *::before, *::after{
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+}
+
+img{
+	max-width: 100%;
+}
+
+a{
+	text-decoration: none;
+	color: #000000;
+}
+
+/*layout*/
+	body{
+		display: grid;
+		grid-template-areas: 
+			"fejlec"
+			"test"
+			"lablec"
+		;
+		grid-template-rows: max-content 1fr max-content;
+		min-height: 100vh;
+
+	}
+	header{
+		background-color: rgb(120,120,120);
+		grid-area: fejlec;
+	}
+	main{
+		background-color: rgb(240,240,240);
+		grid-area: test;
+	}
+	footer{
+		background-color: rgb(120,120,120);
+		grid-area: lablec;
+	}
+
+/*layout*/
+
+/*fejlec*/
+	header{
+		line-height: 4rem;
+		padding: 1rem;
+	}
+
+	.fejlec_jobb{
+		display: inline-block;
+		float:right;
+	}
+
+	.fejlec_bal{
+		display: inline-block;
+		float:left;
+		font-size: 2.5rem;
+	}
+
+	.menugomb1{
+		border:2px solid black;
+		background-color: rgb(240,240,240);
+		border-radius: .75rem;
+		padding: 1rem;
+		font-size: 1.2rem;
+		margin: .2rem; 
+	}
+
+	.menugomb1:hover{
+		background-color: rgb(195,195,195);
+	}
+/*fejlec*/
+
+/*lablec*/
+	footer{
+		line-height: 1.5rem;
+		padding:1rem;
+	}
+
+	.menugomb2{
+		padding: .2rem;
+		font-size: 1.2rem;
+		margin: .2rem;
+		border:2px solid black;
+		border-radius: .75rem; 
+		float: left;
+	}
+	.menugomb2:hover{
+		background-color: rgb(195,195,195);
+	}
+/*lablec*/
+
+/*testresz*/
+	
+	body{
+		text-align: center;
+	}
+
+	.kartya{
+		display: inline-block;
+		border:2px solid black;
+		border-radius: .75rem;
+		padding:3rem;
+		margin:2rem;
+		font-size: 1.4rem;
+		text-align: justify;
+		max-width: 30rem;
+		vertical-align: top;
+		background-color: rgb(220,220,220);
+
+	}
+
+	.kartya img{
+		border-radius: 2rem;
+	}
+
+	.Bekezdes{
+		padding: .5rem;
+	}
+
+	.Link{
+		color: darkblue;
+	}
+
+	.Link:hover{
+		border-bottom: 2px solid darkblue;
+	}
+
+	.cim{
+		background-color: rgb(170,170,170);
+		padding: .5rem;
+	}
+	#Dokumentacio{
+		border:2px solid black;
+		border-radius: .75rem;
+		padding:3rem;
+		margin:2rem;
+		font-size: 1.4rem;
+		text-align: justify;
+		max-width: 100%;
+		vertical-align: top;
+		background-color: rgb(220,220,220);
+	}
+	#Dokumentacio img{
+		display: inline-block;
+		height: 30rem;
+		width: 20rem;
+		border-radius: .75rem;
+	}
+
+	/*racs1*/
+		.gridracs1{
+			display: grid;
+			grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
+			grid-gap: 1rem;
+			margin-right: 1rem;
+			margin-left: 1rem;
+		}
+		.racskep1{
+			height: 20rem;
+			width: 30rem;
+			background-color: (200,200,200);
+			text-align: center;
+			padding: 3rem;
+			margin-right: 1rem;
+			margin-bottom: 1rem;
+		}
+		.racskep1 img{
+			max-height: 15rem;
+			max-width: 25rem;
+			object-fit: contain;
+			border-radius: 1rem;
+		}
+	/*racs1*/
+	/*racs2*/
+		.gridracs2{
+			display: grid;
+			grid-template-columns: repeat(auto-fit, minmax(15rem, 1fr));
+			grid-gap: 1rem;
+			margin-right: 1rem;
+			margin-left: 1rem;
+		}
+		.racskep2{
+			height: 30rem;
+			width: 15rem;
+			background-color: (200,200,200);
+			text-align: center;
+			padding: 3rem;
+			margin-right: 1rem;
+			margin-bottom: 1rem;
+		}
+		.racskep2 img{
+			max-height: 25rem;
+			max-width: 15rem;
+			object-fit: contain;
+			border-radius: 1rem;
+		}
+	/*racs2*/
+
+
+
+/*testresz*/
