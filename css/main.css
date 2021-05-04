@@ -153,6 +153,10 @@ a{
 		width: 20rem;
 		border-radius: .75rem;
 	}
+	#bal{
+		text-align: left;
+	}
+
 
 	/*racs1*/
 		.gridracs1{
